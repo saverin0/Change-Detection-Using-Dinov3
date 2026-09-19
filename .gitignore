@@ -1,0 +1,42 @@
+# Dataset and derived data (SpaceNet-7 is CC BY-SA 4.0; keep it on Drive, not in git)
+*.tif
+*.tiff
+*.geojson
+*.npz
+*.npy
+data/
+datasets/
+spacenet7_cache/
+sn7_part*/
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+
+# Training artifacts
+runs/
+wandb/
+lightning_logs/
+
+# Secrets
+.env
+*.token
+hf_token*
+credentials*.json
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
