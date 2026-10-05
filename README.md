@@ -121,7 +121,7 @@ What the rows mean:
 
 Building segmentation (IoU 0.70) is solid; detecting the appearance of individual small buildings between two months remains the hard part. Part 4's similarity search shows why embeddings still help: a patch's similarity to its own "after construction" embedding jumps from 0.03 to ~0.9 and stays there in every later month, so built-up land is stable and distinct in embedding space even though the *moment* of change is not.
 
-## Second dataset: LEVIR-CD (Part 5)
+## Second dataset, LEVIR-CD (Part 5)
 
 To see how the recipe behaves on very different data, Part 5 runs it on [LEVIR-CD](https://justchenhao.github.io/LEVIR/): 637 pairs of 0.5 m aerial images (1024×1024) taken 5–14 years apart, with a clean binary building-change mask per pair, split 445 / 64 / 128 for train / val / test. Compared with SpaceNet-7 it has 8× the ground resolution, two dates instead of a monthly series, no cloud artifacts, and ~15× more change pixels (~4–5%).
 
